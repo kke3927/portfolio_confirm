@@ -73,7 +73,7 @@ $(document).ready(function(){
         windowWidth = $(window).innerWidth() + 17;
         if(windowWidth < 335) {
             $('.user_util').children().remove();
-            $('.user_util').append(`<img src="../img/lush/lush_shopping_main/account.svg" alt="icon">`)
+            $('.user_util').append(`<img src="./img/lush/lush_shopping_main/account.svg" alt="icon">`)
         }
         else if(windowWidth >= 335) {
             $('.user_util').children().remove()

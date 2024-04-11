@@ -2,7 +2,7 @@ getUrlData('cateNo');
 let prodBgArray = ['lush-easter.webp', 'default_hover_banner.jpg', 'Bath-big-blue-bath-bomb-desktop_f3f6acdc.jpg', 'afro_hair_cair_range_PR_image_2020-1-scaled-1.jpg'];
 $(document).ready(function(){
     $('.product_banner').css({
-        background: `url(../img/lush/lush_shopping_product/${prodBgArray[getUrlData('cateNo')]}) no-repeat center / cover`})
+        background: `url(./img/lush/lush_shopping_product/${prodBgArray[getUrlData('cateNo')]}) no-repeat center / cover`})
     //cateNo에 따라 product_txt_box h2와 p 에 들어가는 문구 바꾸기
     $('.product_txt_box h2').text(PAGENAME_ARR[getUrlData('cateNo')]);
     $('.product_txt_box p').text(PAGEDESC_ARR[getUrlData('cateNo')]);

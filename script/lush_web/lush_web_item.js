@@ -6,7 +6,7 @@ $(document).ready(function(){
         <div class="selected_item">
             <div class="selected_value">용량을 선택해 주세요</div>
             <div class="arrow">
-                <img src="../img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
+                <img src="./img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
             </div>
         </div>
         <ul class="option_ul">
@@ -75,7 +75,7 @@ $(document).ready(function(){
             <div class="selected_item">
                 <div class="selected_value">용량을 선택해 주세요</div>
                 <div class="arrow">
-                    <img src="../img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
+                    <img src="./img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
                 </div>
             </div>
             <ul class="option_ul">
@@ -123,18 +123,18 @@ $(document).ready(function(){
     ////탭 이미지 호버하면 메인 이미지에 올라가기
     let infoLeftItem = `
     <div class="main_img_box">
-                                    <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src1}" alt="main img">
+                                    <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src1}" alt="main img">
                                 </div>
                                 <div class="img_tab_box">
                                     <ul class="ul_img_tab">
                                         <li>
-                                            <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src1}" alt="test">
+                                            <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src1}" alt="test">
                                         </li>
                                         <li>
-                                            <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src}" alt="test">
+                                            <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src}" alt="test">
                                         </li>
                                         <li>
-                                            <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src2}" alt="test">
+                                            <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][getUrlData('itemNo')].src2}" alt="test">
                                         </li>
                                     </ul>
     `
@@ -174,7 +174,7 @@ $(document).ready(function(){
                                             <div class="ab_t_right">
                                                 <div class="added_item_price">${$('.info_price').text()}</div>
                                                 <div class="remove_add_box">
-                                                    <img src="../img/lush/lush_shopping_main/closePop.svg" alt="닫기">
+                                                    <img src="./img/lush/lush_shopping_main/closePop.svg" alt="닫기">
                                                 </div>
                                             </div>
                                         </div>

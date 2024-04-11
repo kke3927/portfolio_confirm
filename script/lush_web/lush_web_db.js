@@ -86,7 +86,7 @@ function lushPickItem(cateNo){
     for(let i=0;i<ITEM_LIST[cateNo].length;i++) {
         let add_item = `<div class="lp_item lp_item${i} swiper-slide">
                                 <a href="lush_item.html?cateNo=0&itemNo=${i}" class="lp_img_box">
-                                    <img src="../img/lush/lush_shopping_main/lush_pick/${ITEM_LIST[cateNo][i].src}" alt="porfolio_img">
+                                    <img src="./img/lush/lush_shopping_main/lush_pick/${ITEM_LIST[cateNo][i].src}" alt="porfolio_img">
                                 </a>
                                 <div class="lp_item_desc_box">
                                     <div class="lp_item_name">
@@ -105,7 +105,7 @@ function mainItemLoad(qty, cateNO, target){
     for(let j=0;j<qty;j++) {
         item = `<div class="swiper-slide">
         <a href="lush_item.html?cateNo=${cateNO}&itemNo=${j+1}" class="mi_img_box">
-            <img src="../img/lush/lush_shopping_product/${CATE_ARR[cateNO]}/${ITEM_LIST[cateNO][j+1].src}" alt="porfolio_imgporfolio_img">
+            <img src="./img/lush/lush_shopping_product/${CATE_ARR[cateNO]}/${ITEM_LIST[cateNO][j+1].src}" alt="porfolio_imgporfolio_img">
         </a>
         <div class="bi_desc_box">
             <div class="bi_item_title"><a href="#">${ITEM_LIST[cateNO][j+1].title}</a></div>
@@ -140,7 +140,7 @@ function loadProductItem(qty, target){
         let productItem = `
 <div class="box box${i}">
 <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">
-                            <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][i].src}" alt="porfolio_img">
+                            <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][i].src}" alt="porfolio_img">
                             </a>
                             <div class="item_desc_box">
                                 <div class="item_title">
@@ -166,7 +166,7 @@ function loadScrollItem(qty){
         let item = `
         <div class="toChk">
         <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">
-        <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${tmpDB.src}" alt="porfolio_img"></a>
+        <img src="./img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${tmpDB.src}" alt="porfolio_img"></a>
         <div class="item_desc_box">
             <div class="item_title">
                 <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">${tmpDB.title}</a>
