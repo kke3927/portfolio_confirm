@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/lush_web/lush_web_item.css">
+    <link rel="stylesheet" href="../css//lush_web/lush_web_h_f.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../script/lush_web/lush_web_db.js"></script>
+    <script defer src="../script/lush_web/lush_web_h_f.js"></script>
+    <script defer src="../script/lush_web/lush_web_item.js"></script>
+</head>
+<body>
+    <div class="top_banner">
+        <div class="tb_contents">
+            <div class="tb_txt tb1">러쉬 타임즈 스프링 에디션에서 토끼를 찾아보세요!</div>
+            <div class="tb_txt tb2">젤러쉬 7기 모집 마감 임박! 지금 바로 지원하기</div>
+            <div class="tb_txt tb3">우리가 피워낸 특별한 향기 보러 가기</div>
+        </div>
+        <div class="tb_close">X</div>
+    </div>
+    <div id="wrap">
+        <header class="header">
+            <div class="contents_area">
+                <div class="header_box">
+                    <div class="head_ham_btn">
+                        <div class="ham_line"></div>
+                        <div class="ham_line"></div>
+                        <div class="ham_line"></div>
+                    </div>
+                    <div class="header_content_box">
+                        <div class="logo">
+                            <a href="lush_main.html">
+                                <img src="../img/lush/lush_shopping_main/logo.svg" alt="lush">
+                            </a>
+                        </div>
+                        <ul class="main_gnb"><!-- 모바일에서 햄버거로-->
+                            <li class="gnb_item">베스트</li>
+                            <li class="gnb_item">신상품</li>
+                            <li class="gnb_item">카테고리</li>
+                            <li class="gnb_item">이벤트</li>
+                            <li class="gnb_item">러쉬 소식</li>
+                        </ul>
+                        <div class="util_box">
+                            <div class="search_box">
+                                <img src="../img/lush/lush_shopping_main/search.svg" alt="검색">
+                                <input type="text" class="search_txt" placeholder="검색어를 입력하세요">
+                            </div>
+                            <div class="shopping_bag">
+                                <img src="../img/lush/lush_shopping_main/ico_bag_app.svg" alt="장바구니">
+                            </div>
+                            <div class="user_util">
+                                <div class="login">로그인</div>
+                                <div class="sign_up">회원가입</div>
+                            </div>
+                        </div>
+                        <div class="search_pan box_none">aaa</div><!--검색박스 없어지면 이걸로-->
+                    </div>
+                </div>
+            </div>
+            <div class="gnb_pan_aside"><!-- main_gnb 호버시 보이기-->
+                <div class="contents_area">
+                    <ul class="aside_pan">
+                        <li class="season_logo">
+                            <a href="#"><img src="../img/lush/lush_shopping_main/logo_spring_02.gif" alt="봄_로고"></a>
+                            <img src="../img/lush/lush_shopping_main/ico_del.svg" alt="닫기" class="aside_pan_close_btn">
+                        </li>
+                        <li class="arcodian_box">
+                            <div>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="0">카테고리</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="lush_product.html?cateNo=1">베스트</a></div>
+                                        <div><a href="lush_product.html?cateNo=2">신제품</a></div>
+                                        <div><a href="lush_product.html?cateNo=3">리미티드</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">배쓰</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">샤워</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">보디</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">헤어</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">페이스</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">메이크업</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">프래그런스</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">기프트</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">스파</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="1">이벤트</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">온라인 이벤트</a></div>
+                                        <div><a href="#">매장 이벤트</a></div>
+                                        <div><a href="#">선정자 발표</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="2">커뮤니티</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">덕찌</a></div>
+                                        <div><a href="#">젤러쉬</a></div>
+                                        <div><a href="#">다운로드 러쉬</a></div>
+                                        <div><a href="#">리토의 일기장</a></div>
+                                        <div><a href="#">러쉬 타임즈</a></div>
+                                        <div><a href="#">취향사전</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="3">러쉬소식</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">러쉬 소개</a></div>
+                                        <div><a href="#">러쉬 이야기</a></div>
+                                        <div><a href="#">채러티팟</a></div>
+                                        <div><a href="#">서명 캠페인</a></div>
+                                        <div><a href="#">매장안내</a></div>
+                                        <div><a href="#">채용공고</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="4">진행중인 이벤트</li>
+                                    <li class="aside_sub_box">
+                                        <div>
+                                            <a href="#">러쉬 타임즈 2024<br>스프링 에디션</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">봄, 기다렸던 봄</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_gnb_pan"><!-- main_gnb 호버시 보이기-->
+                <div class="contents_area">
+                    <ul class="main_pan">
+                        <li>
+                            <div class="submenu_img_box submenu_img_box1">
+                                <a href="lush_product.html?cateNo=1" class="submenu_txt_box">
+                                    <div>베스트 제품 보러가기 →</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box2">
+                                <a href="lush_product.html?cateNo=2" class="submenu_txt_box">
+                                    <div>새로 나온 제품 보러가기 →</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box3">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="lush_product.html?cateNo=1">베스트</a>
+                                    <a href="lush_product.html?cateNo=2">신제품</a>
+                                    <a href="lush_product.html?cateNo=3">리미티드</a>
+                                    <a href="lush_product.html?cateNo=1">배쓰</a>
+                                    <a href="lush_product.html?cateNo=1">샤워</a>
+                                    <a href="lush_product.html?cateNo=1">보디</a>
+                                    <a href="lush_product.html?cateNo=1">헤어</a>
+                                    <a href="lush_product.html?cateNo=1">페이스</a>
+                                    <a href="lush_product.html?cateNo=1">메이크업</a>
+                                    <a href="lush_product.html?cateNo=1">프래그런스</a>
+                                    <a href="lush_product.html?cateNo=1">기프트</a>
+                                    <a href="lush_product.html?cateNo=1">스파</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box4">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">온라인 이벤트</a>
+                                    <a href="#">매장 이벤트</a>
+                                    <a href="#">선정자 발표</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box5">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">러쉬 소개</a>
+                                    <a href="#">러쉬 이야기</a>
+                                    <a href="#">채러티팟</a>
+                                    <a href="#">서명 캠페인</a>
+                                    <a href="#">매장안내</a>
+                                    <a href="#">채용공고</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="item_web_page">
+                <div class="contents_area">
+                    <div class="item_info">
+                        <div class="info_left">
+                        </div>
+                        <div class="info_right">
+                            <div class="info_title"></div>
+                            <table class="info_table">
+                                <tbody>
+                                    <tr class="row_price">
+                                        <td class="tag_box">판매가</td>
+                                        <td class="info_price"></td>
+                                    </tr>
+                                    <tr class="row_deliver">
+                                        <td rowspan="2" class="tag_box">배송비</td>
+                                        <td>
+                                            <div class="select_box">
+                                                <div class="selected_item">
+                                                    <div class="selected_value">배송비 선택</div>
+                                                    <div class="arrow">
+                                                        <img src="../img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
+                                                    </div>
+                                                </div>
+                                                <ul class="option_ul">
+                                                    <li class="option_li">주문시 결제(선결제)</li>
+                                                    <li class="option_li">수령시 결체(착불)</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>₩<span>2,500</span>(₩ 30,000 이상 무료)</td>
+                                    </tr>
+                                    <tr class="select_volume">
+                                        <td class="tag_box">용량</td>
+                                        <td>
+                                            <div class="select_box volume_opt">
+                                                <div class="selected_item">
+                                                    <div class="selected_value">용량을 선택해 주세요</div>
+                                                    <div class="arrow">
+                                                        <img src="../img/lush/lush_shopping_main/btn_quick_top.svg" alt="porfolio img">
+                                                    </div>
+                                                </div>
+                                                <ul class="option_ul">
+                                                    <li class="option_li">125g</li>
+                                                    <li class="option_li">315g</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="order_box"></div>
+                            <div class="add_box_bot">
+                                <div class="item_total_qty">0개</div>
+                                <div class="item_total_price">₩ 0</div>
+                            </div>
+                            <div class="buy_btn_sec">
+                                <div class="add_to_bag">장바구니</div>
+                                <div class="buy_btn">바로구매</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item_detail">
+                        <div class="item_detail_body">
+                            <div id="sec_info">
+                                <div class="item_detail_nav">
+                                    <ul class="id_nav">
+                                        <li class="nav_active">
+                                            <a href="#sec_info">제품정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_review">제품후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_caution">배송/반품/교환</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_important">필수정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner">
+                                    <div class="sec_title sec_p">
+                                        <p>프레쉬 페이스 마스크</p>
+                                        <h3>카타스트로피 코스메틱</h3>
+                                        <p>Catastrophe Cosmetic</p>
+                                    </div>
+                                    <div class="bg_box">
+                                        <img src="../img/lush/lush_shopping_product/best/cw_08_01.png" alt="porfolio img">
+                                        <img src="../img/lush/lush_shopping_product/best/cw_08_02.png" alt="porfolio img">
+                                        <img src="../img/lush/lush_shopping_product/best/cw_08_03.png" alt="porfolio img">
+                                    </div>
+                                    <div class="sec_item_pr sec_p">
+                                        <h3>수분, 영양, 보드라움 모두를<br>잡고 싶을 날에는 이 팩을 이용해요.</h3>
+                                        <p>피부 집중 관리를 도와주는 마법 같은 마스크 팩이랍니다.<br>기분 좋은 꽃향기, 피부에 착!<br>붙는 사용감까지. 정말 잘 사용하고 있어요.</p>
+                                    </div>
+                                    <ul class="item_type_chk sec_p">
+                                        <li>
+                                            <p class="type_name">
+                                                <span>프레쉬 클렌저</span>
+                                            </p>
+                                            <p>얼굴과 몸에 영양을 선사하는 클렌징 제품으로<br>거품 없이도 깨끗한 클렌징을 도와줍니다.</p>
+                                        </li>
+                                        <li class="checked_type">
+                                            <p class="type_name">
+                                                <span>프레쉬 페이스 마스크</span>
+                                            </p>
+                                            <p>영양이 풍부한 원재료를 듬뿍 담은 꾸덕한 제형의<br>워시 오프 팩으로 촉촉한 피부로 가꾸는 데 도움을 줍니다.</p>
+                                        </li>
+                                    </ul>
+                                    <div class="item_banner sec_p">
+                                        <img src="../img/lush/lush_shopping_product/best/cc_catastrophe_re_img.jpg" alt="porfolio img">
+                                        <h3>블루베리와 카모마일이 선사하는<br>싱그러운 향기!</h3>
+                                        <p>자연에서 얻은 블루베리의 풍부한 영양분이 피부에 그대로! <br><br>칼라민 파우더는 부드러운 피부에 도움을 주고<br> 카모마일과 장미는 피부를 건강하게 돌봐줍니다. <br> Tip. 이 팩에 담긴 블루베리는<br> '자연농법'으로 건강하게 재배하고 있습니다.</p>
+                                    </div>
+                                    <ul class="item_use sec_p">
+                                        <li></li>
+                                        <li class="how_to_use">
+                                            <h3>사용 방법</h3>
+                                            <div class="pictogram">
+                                                <img src="../img/lush/lush_shopping_product/best/FRESH_FACE_MASK.png" alt="img">
+                                            </div>
+                                            <div class="how_to_use_step">
+                                                <p>1. 스패츌러와 같은 깨끗한 도구로 골고루 섞어줍니다.</p>
+                                                <p>2. 세안한 깨끗한 얼굴에 피부결이 보이지 않을 정도로 발라줍니다.</p>
+                                                <p>3. 5~10분 경과 후 미온수로 부드럽게 씻어내 주세요</p>
+                                                <p>*팩이 마르기 전에 헹궈내기를 권장합니다.</p>
+                                                <p>*신선한 생재료로 만들어진 제품으로 냉장 보관해주시기 바랍니다.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="item_recipe">
+                                        <li>
+                                            <h3>제품 성분</h3>
+                                        </li>
+                                        <li class="recipe_list">
+                                            <div>
+                                                <img src="../img/lush/lush_shopping_product/best/cc_20220223134149L.png" alt="재료">
+                                                <div class="recipe_name">몰약</div>
+                                                <div class="recipe_desc">편안하고 부드러운 피부에 도움</div>
+                                            </div>
+                                            <div>
+                                                <img src="../img/lush/lush_shopping_product/best/cw_20220223100620L.png" alt="재료">
+                                                <div class="recipe_name">티트리</div>
+                                                <div class="recipe_desc">상쾌한 향기, 깨끗한 피부에 도움</div>
+                                            </div>
+                                            <div>
+                                                <img src="../img/lush/lush_shopping_product/best/cw_20220223142213L.png" alt="재료">
+                                                <div class="recipe_name">꿀</div>
+                                                <div class="recipe_desc">촉촉한 피부에 도움</div>
+                                            </div>
+                                        </li>
+                                        <li class="ingre_list">
+                                            <p><b>대표성분</b></p>
+                                            <p>칼라민 파우더</p>
+                                            <p><b>전성분 표기</b></p>
+                                            <p>칼라민,탤크,정제수, 로우스위트블루베리,글리세린,스위트아몬드오일, 향료,다마스크장미꽃추출물,마트리카리아꽃오일, 오렌지오일,리모넨, 알파-아이소메틸아이오논, 아이리쉬모스가루</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div id="sec_review">
+                                <div class="item_detail_nav">
+                                    <ul class="id_nav">
+                                        <li>
+                                            <a href="#sec_info">제품정보</a>
+                                        </li>
+                                        <li class="nav_active">
+                                            <a href="#sec_review">제품후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_caution">배송/반품/교환</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_important">필수정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner">
+                                    <span>제품 후기가 없습니다.</span>
+                                </div>
+                            </div>
+                            <div id="sec_caution">
+                                <div class="item_detail_nav">
+                                    <ul class="id_nav">
+                                        <li>
+                                            <a href="#sec_info">제품정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_review">제품후기</a>
+                                        </li>
+                                        <li class="nav_active">
+                                            <a href="#sec_caution">배송/반품/교환</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_important">필수정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner">
+                                    <div>&nbsp;</div>
+                                    <div>
+                                        <span>■배송비. 기본 배송료는 2,500원 입니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>■택배사: 우체국 택배를 이용합니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>■배송가능지역: 국내 배송 가능 / 해외 배송은 불가합니다.<br><br></span>
+                                    </div>
+                                    <div>
+                                        <span>■교환/환불 안내 </span>
+                                    </div>
+                                    <div>
+                                        <span>- 러쉬 코리아 홈페이지에서 구매한 제품은 홈페이지를 통해서만 교환/환불이 가능합니다</span>
+                                    </div>
+                                    <div>
+                                        <span>- 고객님의 변심에 의한 교환/ 환불의 경우 상품 및 서비스를 공급 받은 날로부터 7일 이내 가능하며, 미 개봉/ 미 사용 제품에 한하여 교환/ 환불이 가능합니다. </span>
+                                    </div>
+                                    <div>
+                                        <span>- 리미티드 제품의 경우 교환 요청 시 교환 가능한 재고가 소진되었다면 환불진행 만 가능합니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>- 교환/환불 접수는 수령 후 7일이내 주문/배송 조회 항목에서 접수가 가능합니다. </span>
+                                    </div>
+                                    <div>
+                                        <span>- 교환/환불 접수로 회수된 제품이 검수 과정에서 사용 및 개봉한 것으로 확인되면 교환/환불이 거부되며, 기존 배송지로 재배송됩니다. 이 경우 회수 및 재배송에 사용한 택배비용이 추가로 부과됩니다. <br><br></span>
+                                    </div>
+                                    <div>
+                                        <span>* 고객변심으로 인한 교환/환불 시 초도 택배 비용을 포함한 회수 택배 비용이 부과됩니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>* 상품결함으로 인한 교환/환불의 경우 러쉬코리아에서 택배비용을 부담합니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>* 택배 비용은 무통장 입금을 통해서만 결제 가능합니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>* 교환/ 환불할 제품에 스마트 샘플 또는 깜짝 선물이 있는 경우, 함께 반품하여야 교환/환불이 진행됩니다.</span>
+                                    </div>
+                                    <div>
+                                        <span>* 휴대폰 소액 결제는 통신사 정책으로 인해 당월 (1일~ 31일)에 결제한 주문 건만 기존 결제수단을 통해서 취소/환불 가능합니다. </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="sec_important">
+                                <div class="item_detail_nav">
+                                    <ul class="id_nav">
+                                        <li>
+                                            <a href="#sec_info">제품정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_review">제품후기</a>
+                                        </li>
+                                        <li>
+                                            <a href="#sec_caution">배송/반품/교환</a>
+                                        </li>
+                                        <li class="nav_active">
+                                            <a href="#sec_important">필수정보</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="inner">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 80px;">
+                                            <col style="width: auto">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>용량/중량</th>
+                                                <td>75g</td>
+                                            </tr>
+                                            <tr>
+                                                <th>제품 주요 사양</th>
+                                                <td>모든 피부용</td>
+                                            </tr>
+                                            <tr>
+                                                <th>사용기한</th>
+                                                <td>프레쉬 마스크 제품의 최적의 사용기한은 제조일자로부터 4주이며, 제조상품 검수와 배송을 거쳐 상품 수령 후 사용기간은 평균 3주~최소 2주입니다. 수령하신 상품에 부착된 라벨에 제조일자가 년/월/일의 순으로 기재되어 개별 확인이 가능합니다. 추가 문의는 고객센터 1644-2357로 문의주시면 상세히 안내 드리겠습니다.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>사용방법</th>
+                                                <td>넉넉한 양을 덜어 얼굴 전체에 펴 발라준 후 10분간 그대로 두었다가 물로 헹구어주세요. 충분한 클렌징 효과를 위해 마스크를 바른 얼굴에 물로 촉촉하게 적신 후 마사지하듯 문질러줍니다. 신선한 원재료에서 배어 나온 수분이 제품 표면에 고일 수 있습니다. 이는 자연스러운 현상으로 팩과 섞어서 사용해주세요.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>제조사</th>
+                                                <td>본 제품은 영국 러쉬 본사의 기술 제휴를 받고 주요 원료를 수입하여, 동일한 제조 공법으로 만든 제품입니다. - 제조업자: ㈜ 러쉬코리아 충청북도 진천군 신척산단4로 93 - 책임판매업자: ㈜ 러쉬코리아 서울특별시 강남구 학동로 336 www.lush.co.kr</td>
+                                            </tr>
+                                            <tr>
+                                                <th>제조국</th>
+                                                <td>한국</td>
+                                            </tr>
+                                            <tr>
+                                                <th>주요성분</th>
+                                                <td>상세페이지 참조</td>
+                                            </tr>
+                                            <tr>
+                                                <th>식품의약품안전청<br> 심사 필 유무</th>
+                                                <td>식품의약품안전처 심사 대상 아님</td>
+                                            </tr>
+                                            <tr>
+                                                <th>사용상 주의사항</th>
+                                                <td>1. 화장품 사용 시 또는 직사광선에 의하여 사용부위가 붉은 반점, 부어오름, 가려움증 등의 이상 증상이나 부작용 우려 등이 있는 경우 전문의 등과 상담할 것 2. 상처가 있는 부위 등에는 사용을 자제할 것 3. 보관 및 취급상의 주의사항 가. 어린이의 손이 닿지 않는 곳에 보관할 것 나. 직사광선을 피해서 보관할 것 4. 알갱이가 눈에 들어갔을 때에는 물로 씻어내고 이상이 있는 경우에는 전문의와 상담할 것. 5. 눈 주위를 피하여 사용할 것. *냉장보관해주세요 *본 제품은 재 판매가 불가능한 제품 특성상 교환 및 환불이 되지 않습니다.  *5~9월 및 일부 계절에 아이스 팩을 함께 동봉하며, 기온에 따라 동봉 여부는 달라질 수 있습니다</td>
+                                            </tr>
+                                            <tr>
+                                                <th>품질보증기준</th>
+                                                <td>공정거래위원회 고시 소비자분쟁해결기준에 의거 교환 또는 보상 받을 수 있습니다</td>
+                                            </tr>
+                                            <tr>
+                                                <th>소비자상담 전화번호</th>
+                                                <td>1644-2357</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="item_m_page"></div> -->
+        </main>
+        <footer class="footer">
+            <div class="f_box contents_area">
+                <div class="f_box_t">
+                    <img src="../img/lush/lush_shopping_main/lush_footer.svg" alt="footer_lush">
+                    <p>서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아</p>
+                    <p>상호명: 주식회사 러쉬코리아</p>
+                    <p>대표이사 : 우미령</p>
+                    <p>사업자 등록번호 : 201-81-77964 사업자정보확인</p>
+                    <p>통신판매업 신고번호 : 2012-서울서초-0647</p>
+                    <p>개인정보보호책임자 : 장승웅</p>
+                    <ul class="f_box_tab">
+                        <li>개인정보방침</li>
+                        <li>이용약관</li>
+                        <li>영상정보관리지침</li>
+                    </ul>
+                </div>
+                <div class="f_box_b">
+                    <div class="cs_box"><p>1644-2358</p><p>abcd1234@lush.co.kr</p></div>
+                    <div class="cs_box_atten">
+                        <p>상담전화 13:00~16:00 (평일)</p>
+                        <p>카톡상담 9:00~18:00 (평일)</p>
+                    </div>
+                    <p>COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    </script>
+</body>
+</html>

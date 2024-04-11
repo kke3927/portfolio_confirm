@@ -1,0 +1,180 @@
+const ITEM_LIST = [
+    //lush_pick
+    [
+    {item_no: 1, src: '20211007165649L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '카타스트로피 코스메틱', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 2, src: '20211008135544L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '허벌리즘', type: '프레쉬 페이스 마스크', price: 15000},
+    {item_no: 3, src: '20220722072640L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '로즈 잼', type: '샤워 젤', price: 25000},
+    {item_no: 4, src: '20220722121317L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '슬리피', type: '샤워 젤', price: 25000},
+    {item_no: 5, src: '20220929153226L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '대디 오', type: '샤워 젤', price: 25000},
+    {item_no: 6, src: '20221109153105L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '인터갈락틱', type: '배스 밤', price: 20000},
+    {item_no: 7, src: '20221109155824L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '섹스 밤', type: '배스 밤', price: 25000},
+    {item_no: 8, src: '20230524181253L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '아메리칸 크림', type: '샴푸', price: 28000},
+    {item_no: 9, src: '20231114171351L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '인터갈락틱', type: '샤워 젤', price: 25000},
+    {item_no: 10, src: '20240216154948L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '칩 칩', type: '배스 밤', price: 35000},
+    {item_no: 11, src: '20240220154514L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '애그스 온 레그스', type: '배스 밤', price: 25000},
+    {item_no: 12, src: '20240222175804L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '락스타 래빗', type: '배스 밤', price: 25000},
+    {item_no: 13, src: '20240222182044L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '스티키 데이트', type: '슈가 스크럽', price: 19000},
+    {item_no: 14, src: '20240223151014L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '텐터 인더 나이트', type: '프래그런스', price: 35000},
+    {item_no: 15, src: '20240305113929L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png',  title: '오데스', type: '샤워 젤', price: 25000},
+    ],
+    //best
+    [{item_no: 1, src: '20211007165649L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cc_09.jpg', datail_src2:'cc_09_01.png', detail_src3:'cc_09_02.png', detail_src4:'cc_09_03.png', detail_src5:'cc_catastrophe_re_img.jpg', detail_src6:'cc_catastrophe_use.jpg', recipe_src1: 'cc_20220223134149L.png', title: '카타스트로피 코스메틱', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 2, src: '20211007165756L.png', src1: 'cosmetic_warriar1_20211007165757L.jpg', src2: 'cosmetic_warriar2_20211012133538L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', recipe_src3: 'cw_20220223142213L.png', title: '코스메틱 워리어', type: '프레쉬 페이스 마스크', price: 30000},
+    {item_no: 3, src: '20211007165756M.png', src1: 'super_milk1_20211008091505L.jpg',src2: 'super_milk2_20211008091503L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '수퍼 밀크', type: '컨디셔닝 헤어 프라이머', price: 21000},
+    {item_no: 4, src: '20211008091504L.png', src1: 'wasabi_kui1_20211008092623L.jpg',src2: 'wasabi_kui2_20211008092621L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '와사비 샨 쿠이', type: '샴푸', price: 22000},
+    {item_no: 5, src: '20211008092622M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '더티 스프링워시', type: '샴푸', price: 40000},
+    {item_no: 6, src: '20211008101413L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '판타지', type: '프레쉬 페이스 마스크', price: 35000},
+    {item_no: 7, src: '20211008112742L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '허벌리즘', type: '프레쉬 페이스 마스크', price: 15000},
+    {item_no: 8, src: '20211008135544L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '뷰티 슬립', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 9, src: '20220722102910L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '슬리피', type: '샤워 젤', price: 20000},
+    {item_no: 10, src: '20220722121317L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '트와일라잇', type: '보디 스프레이', price: 35000},
+    {item_no: 11, src: '20220926131943M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '대디 오', type: '샴푸', price: 19000},
+    {item_no: 12, src: '20220929153226L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '대디 오', type: '샴푸', price: 31000},
+    {item_no: 13, src: '20220929153226M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '섹스 밤', type: '보디 스프레이', price: 27000},
+    {item_no: 14, src: '20221212162421M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '더티', type: '보디 스프레이', price: 26000},
+    {item_no: 15, src: '20230106173535L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '더티', type: '스프레이', price: 25000},
+    {item_no: 16, src: '20230106173535M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '올리브 브랜치', type: '샤워 젤', price: 18000},
+    {item_no: 17, src: '20230317174459L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '빅', type: '보디 스프레이', price: 19000},
+    {item_no: 18, src: '20230413141623L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '마스크 오브 매그나민티', type: '프레쉬 페이스 마스크', price: 20000},
+    {item_no: 19, src: '20230524181430L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '마스크 오브 매그나민티', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 20, src: '20230524181430M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '오데스', type: '샤워 젤', price: 22000},
+    {item_no: 21, src: '20240305113929L(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '오데스', type: '샤워 젤', price: 30000},
+    {item_no: 22, src: '20240315095250L.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '슬리피', type: '바디 로션', price: 27000},
+    {item_no: 23, src: '20240315095250M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '슬리피', type: '보디 로션', price: 24000},
+],
+    //new
+    [{item_no: 1, src: '20221109152602M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '카타스트로피 코스메틱', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 2, src: '20221109153105M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '허벌리즘', type: '프레쉬 페이스 마스크', price: 15000},
+    {item_no: 3, src: '20221212162556M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '로즈 잼', type: '샤워 젤', price: 25000},
+    {item_no: 4, src: '20231010084417M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '슬리피', type: '샤워 젤', price: 25000},
+    {item_no: 5, src: '20231010085116M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '대디 오', type: '샤워 젤', price: 25000},
+    {item_no: 6, src: '20231010085707M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '인터갈락틱', type: '배스 밤', price: 20000},
+    {item_no: 7, src: '20231016165543M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '섹스 밤', type: '배스 밤', price: 25000},
+    {item_no: 8, src: '20231016170007M(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '아메리칸 크림', type: '샴푸', price: 28000},
+    {item_no: 9, src: '20231016171053M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '인터갈락틱', type: '샤워 젤', price: 25000},
+    {item_no: 10, src: '20231108180557M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '칩 칩', type: '배스 밤', price: 35000},
+    {item_no: 11, src: '20231114171020M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '애그스 온 레그스', type: '배스 밤', price: 25000},
+    {item_no: 12, src: '20231114171351M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '락스타 래빗', type: '배스 밤', price: 25000},
+    {item_no: 13, src: '20231221104507M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '스티키 데이트', type: '슈가 스크럽', price: 19000},
+    {item_no: 14, src: '20240125172336M(1).png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '텐터 인더 나이트', type: '프래그런스', price: 35000},
+    {item_no: 15, src: '20240213135514M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '오데스', type: '샤워 젤', price: 25000}],
+    //limited
+    [{item_no: 1, src: '20240213135514M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '카타스트로피 코스메틱', type: '프레쉬 페이스 마스크', price: 25000},
+    {item_no: 2, src: '20240216154948M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '허벌리즘', type: '프레쉬 페이스 마스크', price: 15000},
+    {item_no: 3, src: '20240220114732M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '로즈 잼', type: '샤워 젤', price: 25000},
+    {item_no: 4, src: '20240220144158M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '슬리피', type: '샤워 젤', price: 25000},
+    {item_no: 5, src: '20240220144531M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '대디 오', type: '샤워 젤', price: 25000},
+    {item_no: 6, src: '20240220154000M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '인터갈락틱', type: '배스 밤', price: 20000},
+    {item_no: 7, src: '20240220154514M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '섹스 밤', type: '배스 밤', price: 25000},
+    {item_no: 8, src: '20240220172140M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '아메리칸 크림', type: '샴푸', price: 28000},
+    {item_no: 9, src: '20240220174026M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '인터갈락틱', type: '샤워 젤', price: 25000},
+    {item_no: 10, src: '20240221145355M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '칩 칩', type: '배스 밤', price: 35000},
+    {item_no: 11, src: '20240221151031M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '애그스 온 레그스', type: '배스 밤', price: 25000},
+    {item_no: 12, src: '20240222171924M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '락스타 래빗', type: '배스 밤', price: 25000},
+    {item_no: 13, src: '20240222172553M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '스티키 데이트', type: '슈가 스크럽', price: 19000},
+    {item_no: 14, src: '20240222172939M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '텐터 인더 나이트', type: '프래그런스', price: 35000},
+    {item_no: 15, src: '20240222173217M.png', src1: 'catastrophic_cosmetic1_20211007165650L.jpg',src2: 'catastrophic_cosmetic2_20211012133953L.png', detail_src1: 'cw_08.jpg', datail_src2:'cw_08_01.png', detail_src3:'cw_08_02.png', detail_src4:'cw_08_03.png', detail_src5:'cw_cosmeticwarrior_re_img.jpg', detail_src6:'cw_cosmeticwarrior_use.jpg', recipe_src1: 'cw_20220222171551L.png', recipe_src2:'cw_20220223100620L.png', title: '오데스', type: '샤워 젤', price: 25000}],
+    //bath
+    [{}]
+];
+
+const CATE_ARR = ['lush_pick', 'best', 'new', 'limited', 'bath'];
+const PAGENAME_ARR = ['lush pick', '베스트', '신제품', '리미티드', '배쓰'];
+const PAGEDESC_ARR = ['러시의 추천!', '누구나 좋아하는 인기 제품을 만나 보세요!', '새로운 향기의 신선함을 경험해 보세요!', '지금의 향기를 놓치지 마세요!', ''];
+
+function lushPickItem(cateNo){
+    for(let i=0;i<ITEM_LIST[cateNo].length;i++) {
+        let add_item = `<div class="lp_item lp_item${i} swiper-slide">
+                                <a href="lush_item.html?cateNo=0&itemNo=${i}" class="lp_img_box">
+                                    <img src="../img/lush/lush_shopping_main/lush_pick/${ITEM_LIST[cateNo][i].src}" alt="porfolio_img">
+                                </a>
+                                <div class="lp_item_desc_box">
+                                    <div class="lp_item_name">
+                                        <a href="lush_item.html?cateNo=${cateNo}&itemNo=${ITEM_LIST[cateNo][i].item_no}">${ITEM_LIST[cateNo][i].title}</a>
+                                    </div>
+                                    <div class="lp_item_price">
+                                        <a href="lush_item.html?cateNo=${cateNo}&itemNo=${ITEM_LIST[cateNo][i].item_no}">₩${(ITEM_LIST[cateNo][i].price).toLocaleString('ko')}</a>
+                                    </div>
+                                </div>
+                            </div>`
+        $('.lush_pick .swiper-wrapper').append(add_item);
+    }
+}
+let item=0;
+function mainItemLoad(qty, cateNO, target){
+    for(let j=0;j<qty;j++) {
+        item = `<div class="swiper-slide">
+        <a href="lush_item.html?cateNo=${cateNO}&itemNo=${j+1}" class="mi_img_box">
+            <img src="../img/lush/lush_shopping_product/${CATE_ARR[cateNO]}/${ITEM_LIST[cateNO][j+1].src}" alt="porfolio_imgporfolio_img">
+        </a>
+        <div class="bi_desc_box">
+            <div class="bi_item_title"><a href="#">${ITEM_LIST[cateNO][j+1].title}</a></div>
+            <div class="bi_item_price"><a href="#">₩${(ITEM_LIST[cateNO][j+1].price).toLocaleString('ko')}</a></div>
+        </div>
+    </div>`
+    $(`${target}`).append(item)
+    }
+}
+
+function getUrlData(key){
+    let initUrl = location.href;
+    initUrl = initUrl.split('?');
+    if(initUrl.length>1) {
+        initUrl = initUrl[1].split('&');
+        for(let i=0;i<initUrl.length;i++){
+            let tmpUrl = initUrl[i].split('=');
+            if(tmpUrl[0] == key) {
+                return tmpUrl[1].split('#')[0]
+            }
+        }
+    }
+    return null;
+}
+function comma(num) {
+    return num.toLocaleString("ko")
+}
+
+function loadProductItem(qty, target){
+    for(let i=0;i<qty;i++){
+        let tmpDB = ITEM_LIST[getUrlData('cateNo')][i];
+        let productItem = `
+<div class="box box${i}">
+<a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">
+                            <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${ITEM_LIST[getUrlData('cateNo')][i].src}" alt="porfolio_img">
+                            </a>
+                            <div class="item_desc_box">
+                                <div class="item_title">
+                                <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">${ITEM_LIST[getUrlData('cateNo')][i].title}</a>
+                                </div>
+                                <div class="item_price">₩ ${comma(ITEM_LIST[getUrlData('cateNo')][i].price)}</div>
+                            </div>
+                        </div>
+`
+        $(target).append(productItem)
+    }
+}
+
+function loadScrollItem(qty){
+    let currCount = $('.sec_body > div').length;
+    let lastDivNo = currCount+qty;
+    let limitDivNo=ITEM_LIST[getUrlData('cateNo')].length;
+    if(lastDivNo > limitDivNo) {
+        lastDivNo = limitDivNo;
+    }
+    for(let i=currCount;i<lastDivNo;i++){
+        let tmpDB = ITEM_LIST[getUrlData('cateNo')][i];
+        let item = `
+        <div class="toChk">
+        <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">
+        <img src="../img/lush/lush_shopping_product/${CATE_ARR[getUrlData('cateNo')]}/${tmpDB.src}" alt="porfolio_img"></a>
+        <div class="item_desc_box">
+            <div class="item_title">
+                <a href="lush_item.html?cateNo=${getUrlData('cateNo')}&itemNo=${tmpDB.item_no}">${tmpDB.title}</a>
+            </div>
+            <div class="item_price">₩ ${comma(tmpDB.price)}</div>
+        </div>
+    </div>
+        `
+        $('.sec_body').append(item);
+    }
+}

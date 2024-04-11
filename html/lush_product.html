@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/lush_web/lush_web_product.css">
+    <link rel="stylesheet" href="../css//lush_web/lush_web_h_f.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../script/lush_web/lush_web_db.js"></script>
+    <script defer src="../script/lush_web/lush_web_h_f.js"></script>
+    <script defer src="../script/lush_web/lush_web_product.js"></script>
+</head>
+<body>
+    <div class="top_banner">
+        <div class="tb_contents">
+            <div class="tb_txt tb1">러쉬 타임즈 스프링 에디션에서 토끼를 찾아보세요!</div>
+            <div class="tb_txt tb2">젤러쉬 7기 모집 마감 임박! 지금 바로 지원하기</div>
+            <div class="tb_txt tb3">우리가 피워낸 특별한 향기 보러 가기</div>
+        </div>
+        <div class="tb_close">X</div>
+    </div>
+    <div id="wrap">
+        <header class="header">
+            <div class="contents_area">
+                <div class="header_box">
+                    <div class="head_ham_btn">
+                        <div class="ham_line"></div>
+                        <div class="ham_line"></div>
+                        <div class="ham_line"></div>
+                    </div>
+                    <div class="header_content_box">
+                        <div class="logo">
+                            <a href="lush_main.html">
+                                <img src="../img/lush/lush_shopping_main/logo.svg" alt="">
+                            </a>
+                        </div>
+                        <ul class="main_gnb"><!-- 모바일에서 햄버거로-->
+                            <li class="gnb_item">베스트</li>
+                            <li class="gnb_item">신상품</li>
+                            <li class="gnb_item">카테고리</li>
+                            <li class="gnb_item">이벤트</li>
+                            <li class="gnb_item">러쉬 소식</li>
+                        </ul>
+                        <div class="util_box">
+                            <div class="search_box">
+                                <img src="../img/lush/lush_shopping_main/search.svg" alt="검색">
+                                <input type="text" class="search_txt" placeholder="검색어를 입력하세요">
+                            </div>
+                            <div class="shopping_bag">
+                                <img src="../img/lush/lush_shopping_main/ico_bag_app.svg" alt="">
+                            </div>
+                            <div class="user_util">
+                                <div class="login">로그인</div>
+                                <div class="sign_up">회원가입</div>
+                            </div>
+                        </div>
+                        <div class="search_pan box_none">aaa</div><!--검색박스 없어지면 이걸로-->
+                    </div>
+                </div>
+            </div>
+            <div class="gnb_pan_aside"><!-- main_gnb 호버시 보이기-->
+                <div class="contents_area">
+                    <ul class="aside_pan">
+                        <li class="season_logo">
+                            <a href="lush_main.html"><img src="../img/lush/lush_shopping_main/logo_spring_02.gif" alt="봄_로고"></a>
+                            <img src="../img/lush/lush_shopping_main/ico_del.svg" alt="닫기" class="aside_pan_close_btn">
+                        </li>
+                        <li class="arcodian_box">
+                            <div>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="0">카테고리</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="lush_product.html?cateNo=1">베스트</a></div>
+                                        <div><a href="lush_product.html?cateNo=2">신제품</a></div>
+                                        <div><a href="lush_product.html?cateNo=3">리미티드</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">배쓰</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">샤워</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">보디</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">헤어</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">페이스</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">메이크업</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">프래그런스</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">기프트</a></div>
+                                        <div><a href="lush_product.html?cateNo=1">스파</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="1">이벤트</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">온라인 이벤트</a></div>
+                                        <div><a href="#">매장 이벤트</a></div>
+                                        <div><a href="#">선정자 발표</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="2">커뮤니티</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">덕찌</a></div>
+                                        <div><a href="#">젤러쉬</a></div>
+                                        <div><a href="#">다운로드 러쉬</a></div>
+                                        <div><a href="#">리토의 일기장</a></div>
+                                        <div><a href="#">러쉬 타임즈</a></div>
+                                        <div><a href="#">취향사전</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="3">러쉬소식</li>
+                                    <li class="aside_sub_box">
+                                        <div><a href="#">러쉬 소개</a></div>
+                                        <div><a href="#">러쉬 이야기</a></div>
+                                        <div><a href="#">채러티팟</a></div>
+                                        <div><a href="#">서명 캠페인</a></div>
+                                        <div><a href="#">매장안내</a></div>
+                                        <div><a href="#">채용공고</a></div>
+                                    </li>
+                                </ul>
+                                <ul class="aside_sub_menu">
+                                    <li class="aside_sub_title" data-subtitle="4">진행중인 이벤트</li>
+                                    <li class="aside_sub_box">
+                                        <div>
+                                            <a href="#">러쉬 타임즈 2024<br>스프링 에디션</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">봄, 기다렸던 봄</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_gnb_pan"><!-- main_gnb 호버시 보이기-->
+                <div class="contents_area">
+                    <ul class="main_pan">
+                        <li>
+                            <div class="submenu_img_box submenu_img_box1">
+                                <a href="lush_product.html?cateNo=1" class="submenu_txt_box">
+                                    <div>베스트 제품 보러가기 →</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box2">
+                                <a href="lush_product.html?cateNo=2" class="submenu_txt_box">
+                                    <div>새로 나온 제품 보러가기 →</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box3">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="lush_product.html?cateNo=1">베스트</a>
+                                    <a href="lush_product.html?cateNo=2">신제품</a>
+                                    <a href="lush_product.html?cateNo=3">리미티드</a>
+                                    <a href="lush_product.html?cateNo=1">배쓰</a>
+                                    <a href="lush_product.html?cateNo=1">샤워</a>
+                                    <a href="lush_product.html?cateNo=1">보디</a>
+                                    <a href="lush_product.html?cateNo=1">헤어</a>
+                                    <a href="lush_product.html?cateNo=1">페이스</a>
+                                    <a href="lush_product.html?cateNo=1">메이크업</a>
+                                    <a href="lush_product.html?cateNo=1">프래그런스</a>
+                                    <a href="lush_product.html?cateNo=1">기프트</a>
+                                    <a href="lush_product.html?cateNo=1">스파</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box4">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">온라인 이벤트</a>
+                                    <a href="#">매장 이벤트</a>
+                                    <a href="#">선정자 발표</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="submenu_img_box submenu_img_box5">
+                            </div>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">러쉬 소개</a>
+                                    <a href="#">러쉬 이야기</a>
+                                    <a href="#">채러티팟</a>
+                                    <a href="#">서명 캠페인</a>
+                                    <a href="#">매장안내</a>
+                                    <a href="#">채용공고</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="container">
+            <div class="product_banner">
+                <!-- <img src="../img/lush/lush_shopping_product/lush-easter.webp" alt=""> -->
+                <div class="product_cover_box">
+                    <div class="product_txt_box">
+                        <h2>베스트</h2>
+                        <p>누구나 좋아하는 인기 제품을 만나 보세요!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contents_area">
+                <div class="product_section">
+                    <div class="ps_title">지금 주목할 제품</div>
+                    <div class="banner_box">
+                        <div class="btn_slide btn_L" >《</div>
+                        <div class="btn_slide btn_R" >》</div>
+                    </div>
+                </div>
+                <div class="product_list_section">
+<!-- 무한스크롤... -->
+                    <div class="note_item_qty"></div>
+                    <div class="scroll_load_sec">
+                        <div class="sec_header">
+                            <select>
+                                <option>인기순</option>
+                                <option>신상품순</option>
+                                <option>리뷰 많은 순</option>
+                            </select>
+                        </div>
+                        <div class="sec_body"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <footer class="footer">
+            <div class="f_box contents_area">
+                <div class="f_box_t">
+                    <img src="../img/lush/lush_shopping_main/lush_footer.svg" alt="footer_lush">
+                    <p>서울 강남구 학동로 336 (메이트리 빌딩(matree B/D)) 1층 주식회사 러쉬코리아</p>
+                    <p>상호명: 주식회사 러쉬코리아</p>
+                    <p>대표이사 : 우미령</p>
+                    <p>사업자 등록번호 : 201-81-77964 사업자정보확인</p>
+                    <p>통신판매업 신고번호 : 2012-서울서초-0647</p>
+                    <p>개인정보보호책임자 : 장승웅</p>
+                    <ul class="f_box_tab">
+                        <li>개인정보방침</li>
+                        <li>이용약관</li>
+                        <li>영상정보관리지침</li>
+                    </ul>
+                </div>
+                <div class="f_box_b">
+                    <div class="cs_box"><p>1644-2358</p><p>abcd1234@lush.co.kr</p></div>
+                    <div class="cs_box_atten">
+                        <p>상담전화 13:00~16:00 (평일)</p>
+                        <p>카톡상담 9:00~18:00 (평일)</p>
+                    </div>
+                    <p>COPYRIGHT © LUSHKOREA.CO.LTD.ALL RIGHTS RESERVED.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    </script>
+</body>
+</html>
